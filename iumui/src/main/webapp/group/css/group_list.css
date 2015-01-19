@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+
+#grp_list_title h3 {
+  margin-top: 0.9091em;
+  margin-bottom: 0.9091em;
+  font-size: 22px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+#grp_list_title hr {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  border: 0;
+  border-top: 1px solid #dddddd;
+}
+.my_group_list {
+	float:left;
+	width: 100%;
+	margin:1.365% auto;
+}

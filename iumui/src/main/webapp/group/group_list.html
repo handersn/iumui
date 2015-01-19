@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<link rel='stylesheet' href='/iumui/css/bootstrap.css'>
+<link rel='stylesheet' href='/iumui/common/css/common.css'>
+<link rel='stylesheet' href='/iumui/css/bootstrap-theme.min.css'>
+<link rel='stylesheet' href='css/group_list.css'>
+ <meta charset="utf-8">
+ 	<title>IUMUI_나의 그룹</title>
+<style>
+
+/** 테스트 화면 start*/
+.groups {
+	width: 78.564%;
+	margin : 5px auto;
+	border: 3px solid #44619D;
+	border-radius: 5px;
+	z-index: 200;
+}
+
+#my_group_list {
+  float:left;
+	width: 75.91%;
+	height: 75.303ex;
+	color: #4e5665;
+}
+
+.test_my_groups {
+	background-color: #FFFFFF;
+	margin:0 auto;
+	width: 100%;
+}
+
+.test_my_groups,
+.test_my_groups th,
+.test_my_groups td {
+	padding: 3px 12px;
+} 
+.test_my_groups th,
+.test_my_groups td {
+}
+
+.groups thead td{
+	border-top: 1px solid rgba(68, 97, 157, 0.15);
+	border-bottom: 1px solid rgba(68, 97, 157, 0.15);
+}
+
+.expire_day, .head_count {
+	border-right: 1px solid rgba(68, 97, 157, 0.15);
+}
+
+.expire_day, .head_count, .private {
+	font-size:small;
+	color: #4D67AC;
+}
+
+.user_state {
+	font-size: x-small;
+}
+
+.g_name {
+	text-decoration:none;
+	font-size:large;
+}
+
+td.g_intro {
+	padding : 10px 10px;
+}
+
+#grp_list_title {
+	padding: 0 4px;
+	margin:0 10.84% 30px 10.84%;
+}
+
+/** 테스트 화면 end*/
+
+</style>
+</head>
+<body>
+  <div id="content_container">
+
+		<!-- 헤더 start -->
+		<div class='header'></div>
+		<!-- 헤더 end -->
+		
+		<!-- 나의 그룹 화면 start -->
+		<div id='content'>
+			<div class='my_group_list'>
+
+				<!-- <div class='grp_box'>
+				<table id="my_groups"></table>
+			</div> -->
+
+				<!-- 나의 그룹 화면 테스트 start -->
+				<div id="my_group_list">
+				
+				<div id="grp_list_title">
+					<h3>내가 가입한 그룹</h3>
+					<hr>
+				</div>
+				
+					<div class="groups">
+					<table class="test_my_groups">
+						<thead>
+							<tr>
+								<th colspan="3" class="g_name"><a href="#grp_list_title"> "모임 이름" </a></th>
+							</tr>
+							<tr>
+								<td colspan="3" class="user_state"> 내가 관리하는 그룹 </td>
+							</tr>
+							<tr>
+								<td colspan="3" class="g_intro"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="head_count">현재 인원</td>
+								<td class="expire_day">2015/03/15일에 종료 | D-15</td>
+								<td class="private">공개된 모임</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+					
+					</div>
+					<!-- 나의 그룹 화면 테스트 end -->
+
+					<!-- 사이드바 start -->
+					<div class='sidebar'></div>
+					<!-- 사이드바 end -->
+				
+			</div>
+		</div>
+		<!-- 나의 그룹 화면 end -->
+		
+		<!-- footer start -->
+		<div class='footer'></div>
+		<!-- footer end -->
+  </div>
+  
+</body>
+<script src="../js/jquery-1.11.1.js"></script>
+<script src='../js/bootstrap.js'></script>
+<script type="text/javascript" src='/iumui/js/handlebars-v2.0.0.js'></script>
+<script type="text/javascript" src='/iumui/js/require.js'></script>
+<script src='/iumui/group/js/group_list.js'></script>
+</html>
